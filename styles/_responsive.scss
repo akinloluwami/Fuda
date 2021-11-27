@@ -1,0 +1,210 @@
+@media only screen and (max-width: 600px) {
+  .hero {
+    .header {
+      display: none;
+    }
+    .mobile-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .logo-and-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 5vh;
+        .logo {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          color: $black;
+          .square {
+            background-color: $accent_color;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin-right: 0.5rem;
+            line-height: 17px;
+            letter-spacing: 2px;
+            text-align: center;
+          }
+        }
+        .hamburger {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          .line {
+            background-color: $accent_color;
+            width: 35px;
+            height: 5px;
+            margin: 2px 0;
+          }
+        }
+      }
+      .header-content {
+        display: none;
+        &.header-content-active {
+          display: flex;
+        }
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4rem;
+        background-color: #feecea;
+        width: 100%;
+        padding: 2rem 0;
+        .header-links {
+          display: flex;
+          list-style: none;
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            margin: 0 1.5rem;
+            a:link {
+              text-decoration: none;
+              color: $black;
+              transition: all ease 0.5s;
+              &.active {
+                color: $accent_color;
+              }
+              &:hover {
+                transition: all ease 0.5s;
+                color: $accent_color;
+              }
+            }
+          }
+        }
+        .icons-and-btn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          i {
+            margin: 1rem 0.5rem;
+            color: $black;
+            cursor: pointer;
+          }
+          button {
+            background-color: $accent_color;
+            color: #fff;
+            border-radius: 2rem;
+            padding: 0.5rem;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      flex-direction: column;
+      padding: 0;
+      justify-content: center;
+      .main-left {
+        align-items: center;
+        width: 100%;
+        h1 {
+          margin: 0;
+        }
+        .ctas {
+          width: 80%;
+          // margin: auto;
+          margin: 2rem 0;
+          flex-direction: column;
+          button {
+            width: 70%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.2rem 0;
+          }
+        }
+      }
+      .main-right {
+        display: none;
+      }
+    }
+  }
+  .what-we-serve-container {
+    .what-we-serve {
+      .row {
+        flex-direction: column;
+      }
+    }
+  }
+  .what-they-say {
+    .review {
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      .left {
+        display: none;
+      }
+      p {
+        &.commnet {
+          width: 100%;
+        }
+      }
+
+      .right {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+  .menu-container {
+    .our-menu {
+      width: 95%;
+      align-items: center;
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        .offerings {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          button {
+            margin: 1.5rem;
+          }
+        }
+        .options {
+          width: 100%;
+          .burger-menu,
+          .pizza-menu,
+          .cupcake-menu,
+          .ramen-menu,
+          .icecream-menu {
+            .option {
+              height: 250px;
+              margin: 0 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+      .section {
+        margin: 10px 0;
+      }
+    }
+  }
+}
