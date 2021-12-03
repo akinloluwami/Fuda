@@ -239,7 +239,6 @@
 .hero .main .main-right {
   width: 50%;
   height: 100%;
-  background-color: #feecea;
 }
 
 .what-we-serve-container .what-we-serve {
@@ -314,10 +313,26 @@
 }
 
 .what-we-serve-container .what-we-serve .row .content .illustration {
-  background-color: #feecea;
   height: 5rem;
   width: 5rem;
   margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.what-we-serve-container .what-we-serve .row .content .illustration img {
+  width: 100px;
+}
+
+.what-we-serve-container .what-we-serve .row .content h3 {
+  color: #f54749;
 }
 
 .what-we-serve-container .what-we-serve .row .content p {
@@ -653,7 +668,6 @@
 
 .what-they-say .review .left {
   width: 50%;
-  background-color: #feecea;
   height: 400px;
 }
 
